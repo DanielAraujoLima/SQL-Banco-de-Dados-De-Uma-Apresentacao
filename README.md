@@ -20,7 +20,7 @@ O principal objetivo deste projeto é colocar em prática conhecimentos relacion
 Tecnologias utilizadas
 
 * **SQL**
-* Banco de dados utilizado: `[adicione aqui: MySQL, PostgreSQL, SQLite, etc.]`
+* Banco de dados utilizado: SQLite
 
 Sobre o projeto
 
@@ -38,9 +38,8 @@ A **chave primária** é utilizada para identificar de forma única cada registr
 
 Exemplo:
 
-```sql
-id INT PRIMARY KEY
-```
+ATTENDEE_ID
+
 
 ### Foreign Key
 
@@ -48,32 +47,28 @@ A **chave estrangeira** é utilizada para criar um relacionamento entre tabelas,
 
 Exemplo:
 
-```sql
-FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
-```
+PRIMARY_CONTENT_ATTENDEE_ID
+
 
 Estrutura
 
 A estrutura do projeto contém os arquivos necessários para a criação e manipulação do banco de dados.
 
-```text
-projeto-banco-dados
- ├── README.md
- ├── banco.sql
- └── outros arquivos
-```
+TABLE
+- ATTENDEE
+- COMPANY
+- PRESENTATION
+- PRESENTATION_ATTENDANCE
+- ROOM
+
 
  Como utilizar
 
-1. Clone este repositório:
-
-```bash
-git clone URL_DO_REPOSITORIO
-```
+1. Baixe o arquivo zip clicando em CODE no repositório e depois extraia ele da pasta compactada:
 
 2. Abra o arquivo SQL no seu sistema de gerenciamento de banco de dados.
 
-3. Execute os comandos presentes no arquivo `banco.sql`.
+3. Execute os comandos presentes no arquivo.
 
 4. Explore as tabelas, relacionamentos e consultas disponíveis no projeto.
 
